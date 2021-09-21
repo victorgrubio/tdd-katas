@@ -54,6 +54,12 @@ Hope you understand.
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+Make a pull request whenever you want and message me on Twitter to review it!
+
+@VictorGarciaDev
+
+## LicenseMIT
+
+[MIT](lICENSE.md)
 
   
