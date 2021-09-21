@@ -1,6 +1,3 @@
-PrinterTest.java:3: error: package FizzBuzz does not exist
-import FizzBuzz.fizzbuzz;
-               ^
 Printer.java:14: error: cannot find symbol
         String displayText = this.function(number);
                                  ^
@@ -30,4 +27,4 @@ PrinterTest.java:18: error: cannot find symbol
                  ^
   symbol:   method add(String)
   location: variable displayed of type String[]
-7 errors
+6 errors
