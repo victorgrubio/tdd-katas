@@ -1,25 +1,10 @@
-Printer.java:13: error: cannot find symbol
-    public void printNumberResult(int number, ArrayList<String> displayed){
-                                              ^
-  symbol:   class ArrayList
-  location: class Printer
-Printer.java:19: error: cannot find symbol
-    public void printNumberRangeResult(int initRange, int endRange, ArrayList<String> displayed){
-                                                                    ^
-  symbol:   class ArrayList
-  location: class Printer
-Printer.java:25: error: cannot find symbol
-    public void printNumberRangeResult(int endRange, ArrayList<String> displayed){
-                                                     ^
-  symbol:   class ArrayList
-  location: class Printer
-Printer.java:14: error: cannot find symbol
+Printer.java:11: error: cannot find symbol
+        this.function = FizzBuzz.fizzbuzz;
+                                ^
+  symbol:   variable fizzbuzz
+  location: class FizzBuzz
+Printer.java:15: error: cannot find symbol
         String displayText = this.function(number);
                                  ^
   symbol: method function(int)
-PrinterTest.java:8: error: cannot find symbol
-    public Printer printer = new Printer(FizzBuzz.fizzbuzz);
-                                                 ^
-  symbol:   variable fizzbuzz
-  location: class FizzBuzz
-5 errors
+2 errors

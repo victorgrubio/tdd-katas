@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class PrinterTest {
     
-    public Printer printer = new Printer(FizzBuzz.fizzbuzz);
+    public Printer printer = new Printer();
     public ArrayList<String>displayed = new ArrayList<String>();
 
     @Test

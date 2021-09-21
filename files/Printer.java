@@ -1,4 +1,5 @@
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 
 
 public class Printer {
@@ -6,8 +7,8 @@ public class Printer {
     private Method function;
  
     
-    public Printer(Method function){
-        this.function = function;
+    public Printer(){
+        this.function = FizzBuzz.fizzbuzz;
     }
     
     public void printNumberResult(int number, ArrayList<String> displayed){
