@@ -13,7 +13,8 @@ PrinterTest.java:8: error: cannot find symbol
   symbol:   variable fizzbuzz
   location: class FizzBuzz
 PrinterTest.java:14: error: cannot find symbol
-        printer.printNumberResult(2, this.display);
-                                         ^
-  symbol: variable display
+        printer.printNumberResult(2, display);
+                                     ^
+  symbol:   variable display
+  location: class PrinterTest
 4 errors

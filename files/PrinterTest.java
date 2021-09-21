@@ -11,7 +11,7 @@ public class PrinterTest {
 
     @Test
     void shouldPrintOneNumber() {
-        printer.printNumberResult(2, this.display);
+        printer.printNumberResult(2, display);
         assertEquals(lastDisplay, "2");
     }
     
