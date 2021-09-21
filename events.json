@@ -267,5 +267,21 @@
       47,
       590071
     ]
+  },
+  {
+    "duration": 1.75868,
+    "colour": "amber",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 17,
+    "time": [
+      2021,
+      9,
+      21,
+      11,
+      10,
+      48,
+      282248
+    ]
   }
 ]

@@ -1,0 +1,16 @@
+Printer.java:8: error: ';' expected
+        this.function = function
+                                ^
+Printer.java:11: error: invalid method declaration; return type required
+    public printNumberResult(int number){
+           ^
+Printer.java:15: error: invalid method declaration; return type required
+    public printNumberRangeResult(int initRange = 0, int endRange = 0){
+           ^
+Printer.java:15: error: ',', ')', or '[' expected
+    public printNumberRangeResult(int initRange = 0, int endRange = 0){
+                                               ^
+Printer.java:15: error: ';' expected
+    public printNumberRangeResult(int initRange = 0, int endRange = 0){
+                                                                     ^
+5 errors
