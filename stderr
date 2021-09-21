@@ -7,18 +7,13 @@ Printer.java:15: error: cannot find symbol
         ^
   symbol:   method displayFunction(String)
   location: class Printer
-PrinterTest.java:7: error: cannot find symbol
+PrinterTest.java:8: error: cannot find symbol
     public Printer printer = new Printer(FizzBuzz.fizzbuzz);
                                                  ^
   symbol:   variable fizzbuzz
   location: class FizzBuzz
-PrinterTest.java:13: error: cannot find symbol
+PrinterTest.java:14: error: cannot find symbol
         printer.printNumberResult(2, this.display);
                                          ^
   symbol: variable display
-PrinterTest.java:18: error: cannot find symbol
-        displayed.add(text);
-                 ^
-  symbol:   method add(String)
-  location: variable displayed of type String[]
-5 errors
+4 errors
