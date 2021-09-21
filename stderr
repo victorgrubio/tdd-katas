@@ -1,20 +1,7 @@
-Printer.java:14: error: cannot find symbol
-        String displayText = this.function(number);
-                                 ^
-  symbol: method function(int)
-Printer.java:15: error: cannot find symbol
-        displayFunction(displayText);
-        ^
-  symbol:   method displayFunction(String)
-  location: class Printer
-PrinterTest.java:8: error: cannot find symbol
-    public Printer printer = new Printer(FizzBuzz.fizzbuzz);
-                                                 ^
-  symbol:   variable fizzbuzz
-  location: class FizzBuzz
-PrinterTest.java:14: error: cannot find symbol
-        printer.printNumberResult(2, display);
-                                     ^
-  symbol:   variable display
-  location: class PrinterTest
-4 errors
+PrinterTest.java:18: error: ';' expected
+        String result = ""
+                          ^
+PrinterTest.java:24: error: reached end of file while parsing
+}
+ ^
+2 errors

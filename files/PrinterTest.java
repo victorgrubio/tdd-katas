@@ -7,16 +7,18 @@ public class PrinterTest {
     
     public Printer printer = new Printer(FizzBuzz.fizzbuzz);
     public ArrayList<String>displayed = new ArrayList<String>();
-    public String lastDisplay = "";
 
     @Test
     void shouldPrintOneNumber() {
-        printer.printNumberResult(2, display);
+        printer.printNumberResult(2, displayed);
         assertEquals(lastDisplay, "2");
     }
     
-    public void display(String text){
-        displayed.add(text);
-        lastDisplay = text;
+    public String getLastDisplay(){
+        String result = ""
+        if (displayed.size() > 0) {
+            result = displayed.get(displayed.size() - 1);
+        return result;
+    
     }
 }

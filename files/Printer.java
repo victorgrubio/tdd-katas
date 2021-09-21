@@ -10,20 +10,20 @@ public class Printer {
         this.function = function;
     }
     
-    public void printNumberResult(int number, Method displayFunction){
+    public void printNumberResult(int number, ArrayList<String> displayed){
         String displayText = this.function(number);
-        displayFunction(displayText);
         System.out.println(displayText);
+        displayed.add(displayText);
     }
     
-    public void printNumberRangeResult(int initRange, int endRange, Method displayFunction){
+    public void printNumberRangeResult(int initRange, int endRange, ArrayList<String> displayed){
         for (int i = initRange; i <= endRange; i++){
-            this.printNumberResult(i, displayFunction);
+            this.printNumberResult(i, displayed);
         }
     }
     
-    public void printNumberRangeResult(int endRange, Method displayFunction){
-        this.printNumberRangeResult(0, endRange, displayFunction);
+    public void printNumberRangeResult(int endRange, ArrayList<String> displayed){
+        this.printNumberRangeResult(0, endRange, displayed);
     }
     
 }
