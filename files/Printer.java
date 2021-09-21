@@ -12,10 +12,14 @@ public class Printer {
         System.out.println(this.function(number));
     }
     
-    public void printNumberRangeResult(int initRange = 0, int endRange = 0){
+    public void printNumberRangeResult(int initRange, int endRange){
         for (int i = initRange; i <= endRange; i++){
             this.printNumberResult(i);
         }
+    }
+    
+    public void printNumberRangeResult(int endRange){
+        this.printNumberRangeResult(0, endRange);
     }
     
 }

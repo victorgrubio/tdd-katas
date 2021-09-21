@@ -1,7 +1,17 @@
-Printer.java:15: error: ',', ')', or '[' expected
-    public void printNumberRangeResult(int initRange = 0, int endRange = 0){
-                                                    ^
-Printer.java:15: error: ';' expected
-    public void printNumberRangeResult(int initRange = 0, int endRange = 0){
-                                                                          ^
-2 errors
+Printer.java:8: error: cannot find symbol
+        this.function = function;
+            ^
+  symbol: variable function
+Printer.java:12: error: cannot find symbol
+        System.out.println(this.function(number));
+                               ^
+  symbol: method function(int)
+PrinterTest.java:5: error: cannot find symbol
+    private Printer printer = new Printer(FizzBuzz.fizzbuzz);
+                                                  ^
+  symbol:   variable fizzbuzz
+  location: class FizzBuzz
+PrinterTest.java:9: error: 'void' type not allowed here
+        assertEquals(printer.printNumberResult(2), "2");
+                                              ^
+4 errors
