@@ -22,9 +22,4 @@ PrinterTest.java:8: error: cannot find symbol
                                                  ^
   symbol:   variable fizzbuzz
   location: class FizzBuzz
-PrinterTest.java:14: error: cannot find symbol
-        assertEquals(lastDisplay, "2");
-                     ^
-  symbol:   variable lastDisplay
-  location: class PrinterTest
-6 errors
+5 errors
