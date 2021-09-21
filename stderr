@@ -1,0 +1,4 @@
+FizzBuzz.java:6: error: ';' expected
+        if (number % 3 == 0) result = "Fizz"
+                                            ^
+1 error

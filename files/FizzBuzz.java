@@ -2,6 +2,10 @@
 public class FizzBuzz {
 
     public static String fizzbuzz(int number) {
-        return Integer.toString(number);
+        String result = "";
+        if (number % 3 == 0) result = "Fizz"
+        else result = Integer.toString(number);
+        
+        return result;
     }
 }
