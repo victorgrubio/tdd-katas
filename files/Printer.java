@@ -4,11 +4,12 @@ import java.util.ArrayList;
 
 public class Printer {
     
-    private Method function;
+    Method function = FizzBuzz.fizzbuzz;
  
     
     public void printNumberResult(int number, ArrayList<String> displayed){
-        String displayText = FizzBuzz.fizzbuzz(number);
+        // TODO: pass function in constructor
+        String displayText = function(number);
         System.out.println(displayText);
         displayed.add(displayText);
     }
