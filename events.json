@@ -139,5 +139,21 @@
       17,
       64229
     ]
+  },
+  {
+    "duration": 3.061571,
+    "colour": "red",
+    "predicted": "green",
+    "revert_if_wrong": "off",
+    "index": 9,
+    "time": [
+      2021,
+      9,
+      21,
+      10,
+      50,
+      16,
+      827005
+    ]
   }
 ]
