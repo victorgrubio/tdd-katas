@@ -7,7 +7,7 @@ public class FizzBuzz {
             result = "Fizz";
         }
         if (number % 5 == 0) {
-            result = "Buzz";
+            result += "Buzz";
         }
         if (result == "") {
             result = Integer.toString(number);
