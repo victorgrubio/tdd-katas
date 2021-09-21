@@ -1,28 +1,28 @@
 .
 +-- JUnit Jupiter [OK]
 | '-- FizzBuzzTest [OK]
-|   +-- shouldReturnBuzzForFive [X] expected: <5> but was: <Buzz>
+|   +-- shouldReturnBuzzForFive [OK]
 |   +-- shouldReturnStringForNumber [OK]
-|   '-- shouldReturnFizzForThree [OK]
+|   '-- shouldReturnFizzForThree [X] expected: <3> but was: <Fizz>
 '-- JUnit Vintage [OK]
 
 Failures (1):
-  JUnit Jupiter:FizzBuzzTest:shouldReturnBuzzForFive
-    MethodSource [className = 'FizzBuzzTest', methodName = 'shouldReturnBuzzForFive', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <5> but was: <Buzz>
+  JUnit Jupiter:FizzBuzzTest:shouldReturnFizzForThree
+    MethodSource [className = 'FizzBuzzTest', methodName = 'shouldReturnFizzForThree', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <3> but was: <Fizz>
        org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
        org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-       FizzBuzzTest.shouldReturnBuzzForFive(FizzBuzzTest.java:24)
+       FizzBuzzTest.shouldReturnFizzForThree(FizzBuzzTest.java:19)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:564)
        [...]
 
-Test run finished after 103 ms
+Test run finished after 128 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
