@@ -1,6 +1,6 @@
 PrinterTest.java:3: error: package FizzBuzz does not exist
-import FizzBuzz.*;
-^
+import FizzBuzz.fizzbuzz;
+               ^
 Printer.java:14: error: cannot find symbol
         String displayText = this.function(number);
                                  ^
