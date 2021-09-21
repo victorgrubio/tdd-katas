@@ -7,7 +7,7 @@ public class Printer {
     Method function;
     
     public Printer(){
-        this.function = function
+        this.function = FizzBuzz.fizzbuzz;
     }
  
     
