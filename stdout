@@ -3,13 +3,13 @@
 | '-- FizzBuzzTest [OK]
 |   +-- shouldReturnBuzzForFive [OK]
 |   +-- shouldReturnStringForNumber [OK]
-|   '-- shouldReturnFizzForThree [X] expected: <3> but was: <Fizz>
+|   '-- shouldReturnFizzForThree [X] expected: <3> but was: <HO>
 '-- JUnit Vintage [OK]
 
 Failures (1):
   JUnit Jupiter:FizzBuzzTest:shouldReturnFizzForThree
     MethodSource [className = 'FizzBuzzTest', methodName = 'shouldReturnFizzForThree', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <3> but was: <Fizz>
+    => org.opentest4j.AssertionFailedError: expected: <3> but was: <HO>
        org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
        org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
@@ -22,7 +22,7 @@ Failures (1):
        java.base/java.lang.reflect.Method.invoke(Method.java:564)
        [...]
 
-Test run finished after 100 ms
+Test run finished after 103 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
