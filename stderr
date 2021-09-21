@@ -1,10 +1,4 @@
-Printer.java:7: error: cannot find symbol
-    Method function = FizzBuzz.fizzbuzz;
-                              ^
-  symbol:   variable fizzbuzz
-  location: class FizzBuzz
-Printer.java:12: error: cannot find symbol
-        String displayText = this.function(number);
-                                 ^
-  symbol: method function(int)
-2 errors
+Printer.java:10: error: ';' expected
+        this.function = function
+                                ^
+1 error

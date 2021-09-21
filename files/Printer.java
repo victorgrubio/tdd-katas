@@ -4,7 +4,11 @@ import java.util.ArrayList;
 
 public class Printer {
     
-    Method function = FizzBuzz.fizzbuzz;
+    Method function;
+    
+    public Printer(){
+        this.function = function
+    }
  
     
     public void printNumberResult(int number, ArrayList<String> displayed){
