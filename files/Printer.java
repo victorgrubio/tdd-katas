@@ -9,7 +9,7 @@ public class Printer {
     
     public void printNumberResult(int number, ArrayList<String> displayed){
         // TODO: pass function in constructor
-        String displayText = function(number);
+        String displayText = this.function(number);
         System.out.println(displayText);
         displayed.add(displayText);
     }

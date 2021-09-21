@@ -4,8 +4,7 @@ Printer.java:7: error: cannot find symbol
   symbol:   variable fizzbuzz
   location: class FizzBuzz
 Printer.java:12: error: cannot find symbol
-        String displayText = function(number);
-                             ^
-  symbol:   method function(int)
-  location: class Printer
+        String displayText = this.function(number);
+                                 ^
+  symbol: method function(int)
 2 errors
