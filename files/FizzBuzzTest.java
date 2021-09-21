@@ -12,4 +12,10 @@ public class FizzBuzzTest {
     void shouldReturnStringForNumber() {
         assertEquals(FizzBuzz.fizzbuzz(2), "2");
     }
+    
+    
+    @Test
+    void shouldReturnFizzForThree(){
+        assertEquals(FizzBuzz.fizzbuzz(3), "Fizz");
+    }
 }
