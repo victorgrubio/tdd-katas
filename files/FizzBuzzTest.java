@@ -18,4 +18,9 @@ public class FizzBuzzTest {
     void shouldReturnFizzForThree(){
         assertEquals(FizzBuzz.fizzbuzz(3), "Fizz");
     }
+    
+    @Test
+    void shouldReturnBuzzForFive(){
+        assertEquals(FizzBuzz.fizzbuzz(5), "Buzz");   
+    }
 }

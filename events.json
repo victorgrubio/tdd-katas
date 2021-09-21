@@ -107,5 +107,21 @@
       15,
       64494
     ]
+  },
+  {
+    "duration": 2.993856,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 7,
+    "time": [
+      2021,
+      9,
+      21,
+      10,
+      48,
+      54,
+      315269
+    ]
   }
 ]
