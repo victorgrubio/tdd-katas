@@ -523,5 +523,21 @@
       25,
       14440
     ]
+  },
+  {
+    "duration": 1.866372,
+    "colour": "amber",
+    "predicted": "green",
+    "revert_if_wrong": "off",
+    "index": 33,
+    "time": [
+      2021,
+      9,
+      21,
+      11,
+      55,
+      38,
+      406107
+    ]
   }
 ]

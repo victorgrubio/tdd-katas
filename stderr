@@ -1,7 +1,4 @@
-PrinterTest.java:18: error: ';' expected
-        String result = ""
-                          ^
 PrinterTest.java:24: error: reached end of file while parsing
 }
  ^
-2 errors
+1 error
