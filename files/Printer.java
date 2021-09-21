@@ -2,6 +2,8 @@ import java.lang.reflect.Method;
 
 
 public class Printer {
+    
+    private Method function;
  
     
     public Printer(Method function){
