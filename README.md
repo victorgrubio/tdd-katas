@@ -58,7 +58,7 @@ Make a pull request whenever you want and message me on Twitter to review it!
 
 @VictorGarciaDev
 
-## LicenseMIT
+## License
 
 [MIT](lICENSE.md)
 
