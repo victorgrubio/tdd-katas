@@ -1,17 +1,4 @@
-Printer.java:8: error: cannot find symbol
-        this.function = function;
-            ^
-  symbol: variable function
-Printer.java:12: error: cannot find symbol
-        System.out.println(this.function(number));
-                               ^
-  symbol: method function(int)
-PrinterTest.java:5: error: cannot find symbol
-    private Printer printer = new Printer(FizzBuzz.fizzbuzz);
+PrinterTest.java:11: error: ';' expected
+        printer.printNumberResult(2, this.display)
                                                   ^
-  symbol:   variable fizzbuzz
-  location: class FizzBuzz
-PrinterTest.java:9: error: 'void' type not allowed here
-        assertEquals(printer.printNumberResult(2), "2");
-                                              ^
-4 errors
+1 error

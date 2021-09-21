@@ -8,8 +8,10 @@ public class Printer {
         this.function = function;
     }
     
-    public void printNumberResult(int number){
-        System.out.println(this.function(number));
+    public void printNumberResult(int number, Method displayFunction){
+        String displayText = this.function(number);
+        displayFunction(displayText);
+        System.out.println(displayText);
     }
     
     public void printNumberRangeResult(int initRange, int endRange){

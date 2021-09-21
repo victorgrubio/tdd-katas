@@ -3,9 +3,17 @@ import static org.junit.jupiter.api.Assertions.*;
 public class PrinterTest {
     
     private Printer printer = new Printer(FizzBuzz.fizzbuzz);
+    public String[] displayed = {};
+    public String lastDisplay = "";
 
     @Test
     void shouldPrintOneNumber() {
-        assertEquals(printer.printNumberResult(2), "2");
+        printer.printNumberResult(2, this.display)
+        assertEquals(lastDisplay, "2");
+    }
+    
+    public void Display(String text){
+        displayed.add(text);
+        lastDisplay = text;
     }
 }
