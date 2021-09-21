@@ -1,8 +1,10 @@
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
+import FizzBuzz;
+
 public class PrinterTest {
     
-    private Printer printer = new Printer(FizzBuzz.fizzbuzz);
+    public Printer printer = new Printer(FizzBuzz.fizzbuzz);
     public String[] displayed = {};
     public String lastDisplay = "";
 

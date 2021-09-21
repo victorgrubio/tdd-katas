@@ -1,30 +1,4 @@
-Printer.java:14: error: cannot find symbol
-        String displayText = this.function(number);
-                                 ^
-  symbol: method function(int)
-Printer.java:15: error: cannot find symbol
-        displayFunction(displayText);
-        ^
-  symbol:   method displayFunction(String)
-  location: class Printer
-Printer.java:21: error: method printNumberResult in class Printer cannot be applied to given types;
-            this.printNumberResult(i);
-                ^
-  required: int,Method
-  found:    int
-  reason: actual and formal argument lists differ in length
-PrinterTest.java:5: error: cannot find symbol
-    private Printer printer = new Printer(FizzBuzz.fizzbuzz);
-                                                  ^
-  symbol:   variable fizzbuzz
-  location: class FizzBuzz
-PrinterTest.java:11: error: cannot find symbol
-        printer.printNumberResult(2, this.display);
-                                         ^
-  symbol: variable display
-PrinterTest.java:16: error: cannot find symbol
-        displayed.add(text);
-                 ^
-  symbol:   method add(String)
-  location: variable displayed of type String[]
-6 errors
+PrinterTest.java:3: error: '.' expected
+import FizzBuzz;
+               ^
+1 error
