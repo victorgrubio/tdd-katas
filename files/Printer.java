@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Printer {
     
-    Method function;
     
     public Printer(){
         this.function = FizzBuzz.fizzbuzz;
@@ -13,7 +12,7 @@ public class Printer {
     
     public void printNumberResult(int number, ArrayList<String> displayed){
         // TODO: pass function in constructor
-        String displayText = this.function(number);
+        String displayText = FizzBuzz.fizzbuzz(number);
         System.out.println(displayText);
         displayed.add(displayText);
     }
