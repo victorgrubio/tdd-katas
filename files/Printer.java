@@ -4,12 +4,7 @@ import java.util.ArrayList;
 
 public class Printer {
     
-    
-    public Printer(){
-        this.function = FizzBuzz.fizzbuzz;
-    }
- 
-    
+        
     public void printNumberResult(int number, ArrayList<String> displayed){
         // TODO: pass function in constructor
         String displayText = FizzBuzz.fizzbuzz(number);
