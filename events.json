@@ -219,5 +219,21 @@
       18,
       168498
     ]
+  },
+  {
+    "duration": 1.758227,
+    "colour": "amber",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 14,
+    "time": [
+      2021,
+      9,
+      21,
+      10,
+      56,
+      13,
+      190126
+    ]
   }
 ]

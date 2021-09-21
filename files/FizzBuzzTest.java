@@ -22,4 +22,19 @@ public class FizzBuzzTest {
     void shouldReturnBuzzForFive(){
         assertEquals(FizzBuzz.fizzbuzz(5), "Buzz");   
     }
+    
+    @Test
+    void shouldReturnFizzForThreeMultiple(){
+        assertEquals(FizzBuzz.fizzbuzz(9), "Fizz");
+    }
+    
+    @Test
+    void shouldReturnBuzzForFiveMultiple(){
+        assertEquals(FizzBuzz.fizzbuzz(25), "Buzz");
+    }
+    
+    @Test
+    void shouldReturnFizzBuzzForFiveThreeMultiple{
+        assertEquals(FizzBuzz.fizzbuzz(15), "FizzBuzz");
+    }
 }
