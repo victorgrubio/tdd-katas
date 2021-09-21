@@ -5,7 +5,7 @@ public class Printer {
  
     
     public Printer(Method function){
-        this.function = function
+        this.function = function;
     }
     
     public printNumberResult(int number){
