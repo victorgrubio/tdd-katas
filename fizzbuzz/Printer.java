@@ -6,7 +6,6 @@ public class Printer {
     
         
     public void printNumberResult(int number, ArrayList<String> displayed){
-        // TODO: pass function in constructor
         String displayText = FizzBuzz.fizzbuzz(number);
         System.out.println(displayText);
         displayed.add(displayText);
