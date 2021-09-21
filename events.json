@@ -43,5 +43,21 @@
       40,
       866005
     ]
+  },
+  {
+    "duration": 3.059103,
+    "colour": "green",
+    "predicted": "green",
+    "revert_if_wrong": "on",
+    "index": 3,
+    "time": [
+      2021,
+      9,
+      21,
+      10,
+      45,
+      21,
+      424681
+    ]
   }
 ]
