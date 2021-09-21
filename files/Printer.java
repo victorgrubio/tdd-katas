@@ -7,12 +7,8 @@ public class Printer {
     private Method function;
  
     
-    public Printer(){
-        this.function = FizzBuzz.fizzbuzz;
-    }
-    
     public void printNumberResult(int number, ArrayList<String> displayed){
-        String displayText = this.function(number);
+        String displayText = FizzBuzz.fizzbuzz(number);
         System.out.println(displayText);
         displayed.add(displayText);
     }
