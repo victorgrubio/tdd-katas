@@ -18,6 +18,7 @@ public class PrinterTest {
         String result = "";
         if (displayed.size() > 0) {
             result = displayed.get(displayed.size() - 1);
+        }
         return result;
     
     }
