@@ -22,7 +22,7 @@ Failures (1):
        java.base/java.lang.reflect.Method.invoke(Method.java:564)
        [...]
 
-Test run finished after 145 ms
+Test run finished after 100 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
