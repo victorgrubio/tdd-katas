@@ -1,0 +1,4 @@
+FizzBuzz.java:5: error: int cannot be dereferenced
+        return number.toString();
+                     ^
+1 error

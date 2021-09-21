@@ -6,12 +6,10 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
-public class HikerTest {
+public class FizzBuzzTest {
 
     @Test
-    void life_the_universe_and_everything() {
-        int expected = 42;
-        int actual = Hiker.answer();
-        assertEquals(expected, actual);
+    void shouldReturnStringForNumber() {
+        assertEquals(FizzBuzz.fizzbuzz(2), "2");
     }
 }
