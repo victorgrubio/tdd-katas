@@ -1,14 +1,32 @@
-# This a copy of [your cyber-dojo exercise](https://cyber-dojo.org/kata/edit/mWW82t):
+# Cyber Dojo Kata
 - Exercise: `Fizz Buzz`
 - Language & test-framework: `Java, JUnit`
 
-## How to upload your cyber-dojo exercise to GitHub:
-- Go to your github on browser.
-- Create a new repo for your cyber-dojo practice. For example `cyber-dojo-2021-7-11-bR2hnf`
-- Execute the instructions shown in GitHub to 'push an existing repository from the command line'
-The instructions will look like this:
-```
-git remote add origin https://github.com/diegopego/cyber-dojo-2021-7-11-bR2hnf.git
-git branch -M main
-git push -u origin main
-```
+
+## Problem description
+
+Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+Sample output:
+
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+... etc up to 100
