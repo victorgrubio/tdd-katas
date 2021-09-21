@@ -12,7 +12,7 @@ public class PrinterTest {
         assertEquals(lastDisplay, "2");
     }
     
-    public void Display(String text){
+    public void display(String text){
         displayed.add(text);
         lastDisplay = text;
     }
