@@ -16,14 +16,14 @@ public class Printer {
         System.out.println(displayText);
     }
     
-    public void printNumberRangeResult(int initRange, int endRange){
+    public void printNumberRangeResult(int initRange, int endRange, Method displayFunction){
         for (int i = initRange; i <= endRange; i++){
-            this.printNumberResult(i);
+            this.printNumberResult(i, displayFunction);
         }
     }
     
-    public void printNumberRangeResult(int endRange){
-        this.printNumberRangeResult(0, endRange);
+    public void printNumberRangeResult(int endRange, Method displayFunction){
+        this.printNumberRangeResult(0, endRange, displayFunction);
     }
     
 }
