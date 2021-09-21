@@ -34,7 +34,7 @@ public class FizzBuzzTest {
     }
     
     @Test
-    void shouldReturnFizzBuzzForFiveThreeMultiple{
+    void shouldReturnFizzBuzzForFiveThreeMultiple(){
         assertEquals(FizzBuzz.fizzbuzz(15), "FizzBuzz");
     }
 }
