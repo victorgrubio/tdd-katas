@@ -2,38 +2,38 @@
 // JUnit assertion - the default Java assertion library
 // https://junit.org/junit5/
 
-import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
 
     @Test
-    void shouldReturnStringForNumber() {
+    public void shouldReturnStringForNumber() {
         assertEquals(FizzBuzz.fizzbuzz(2), "2");
     }
     
     @Test
-    void shouldReturnFizzForThree(){
+    public void shouldReturnFizzForThree(){
         assertEquals(FizzBuzz.fizzbuzz(3), "Fizz");
     }
     
     @Test
-    void shouldReturnBuzzForFive(){
+    public void shouldReturnBuzzForFive(){
         assertEquals(FizzBuzz.fizzbuzz(5), "Buzz");   
     }
     
     @Test
-    void shouldReturnFizzForThreeMultiple(){
+    public void shouldReturnFizzForThreeMultiple(){
         assertEquals(FizzBuzz.fizzbuzz(9), "Fizz");
     }
     
     @Test
-    void shouldReturnBuzzForFiveMultiple(){
+    public void shouldReturnBuzzForFiveMultiple(){
         assertEquals(FizzBuzz.fizzbuzz(25), "Buzz");
     }
     
     @Test
-    void shouldReturnFizzBuzzForFiveThreeMultiple(){
+    public void shouldReturnFizzBuzzForFiveThreeMultiple(){
         assertEquals(FizzBuzz.fizzbuzz(15), "FizzBuzz");
     }
 }
