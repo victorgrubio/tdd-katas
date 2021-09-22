@@ -56,7 +56,7 @@ Contributions are always welcome!
 
 Make a pull request whenever you want and message me on Twitter to review it!
 
-@VictorGarciaDev
+[@VictorGarciaDev](https://twitter.com/VictorGarciaDev)
 
 ## License
 
