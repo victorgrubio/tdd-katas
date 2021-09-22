@@ -11,7 +11,7 @@ public class DoorManager {
         for (int i = 1; i <= iterations; i++){
             int currentIteration = i;
             IntStream.range(0, doorStatusArray.size())
-                    .filter(x -> (x-1) % currentIteration == 0).forEach(
+                    .filter(x -> (x+1) % currentIteration == 0).forEach(
                             (int x) -> {
                                 doorStatusArray.set(x, !doorStatusArray.get(x));
                             }

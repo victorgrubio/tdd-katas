@@ -55,6 +55,17 @@ public class DoorManagerTest {
     }
 
     @Test
+    void testShouldReturnTrueOnlyInSquares(){
+        int perfectSquares[] = {1, 4, 9, 16, 25, 36, 49, 64, 81, 100};
+        doorStatusArray = DoorManager.alterDoors(doorStatusArray, doorStatusArray.size());
+        assertEquals(countBooleanItems(doorStatusArray, true), 10);
+        for (int number: perfectSquares){
+            System.out.println(number);
+            assertEquals(doorStatusArray.get(number - 1), true);
+        }
+    }
+
+    @Test
     void testShould6thDoorBeOpenedAfter3Iterations(){
         doorStatusArray = DoorManager.alterDoors(doorStatusArray, 3);
         assertEquals(doorStatusArray.get(6), true);
