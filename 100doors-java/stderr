@@ -1,0 +1,50 @@
+DoorManagerTest.java:14: error: cannot find symbol
+    @Before
+     ^
+  symbol:   class Before
+  location: class DoorManagerTest
+DoorManagerTest.java:16: error: cannot find symbol
+        Arrays.stream(doorStatusArray).map(closeDoor).collect(Collectors.toList());
+                                           ^
+  symbol:   variable closeDoor
+  location: class DoorManagerTest
+DoorManagerTest.java:16: error: no suitable method found for stream(boolean[])
+        Arrays.stream(doorStatusArray).map(closeDoor).collect(Collectors.toList());
+              ^
+    method Arrays.<T#1>stream(T#1[]) is not applicable
+      (inference variable T#1 has incompatible bounds
+        equality constraints: boolean
+        lower bounds: Object)
+    method Arrays.<T#2>stream(T#2[],int,int) is not applicable
+      (cannot infer type-variable(s) T#2
+        (actual and formal argument lists differ in length))
+    method Arrays.stream(int[]) is not applicable
+      (argument mismatch; boolean[] cannot be converted to int[])
+    method Arrays.stream(long[]) is not applicable
+      (argument mismatch; boolean[] cannot be converted to long[])
+    method Arrays.stream(double[]) is not applicable
+      (argument mismatch; boolean[] cannot be converted to double[])
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>stream(T#1[])
+    T#2 extends Object declared in method <T#2>stream(T#2[],int,int)
+DoorManagerTest.java:21: error: no suitable method found for stream(boolean[])
+        assertEquals(Arrays.stream(doorStatusArray).noneMatch(door -> door == true), true);
+                           ^
+    method Arrays.<T#1>stream(T#1[]) is not applicable
+      (inference variable T#1 has incompatible bounds
+        equality constraints: boolean
+        lower bounds: Object)
+    method Arrays.<T#2>stream(T#2[],int,int) is not applicable
+      (cannot infer type-variable(s) T#2
+        (actual and formal argument lists differ in length))
+    method Arrays.stream(int[]) is not applicable
+      (argument mismatch; boolean[] cannot be converted to int[])
+    method Arrays.stream(long[]) is not applicable
+      (argument mismatch; boolean[] cannot be converted to long[])
+    method Arrays.stream(double[]) is not applicable
+      (argument mismatch; boolean[] cannot be converted to double[])
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>stream(T#1[])
+    T#2 extends Object declared in method <T#2>stream(T#2[],int,int)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors

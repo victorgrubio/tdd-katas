@@ -1,6 +1,7 @@
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+package fizzbuzz;
+import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class PrinterTest {
@@ -14,7 +15,7 @@ public class PrinterTest {
         assertEquals(getLastDisplay(), "2");
         displayed.clear();
     }
-    
+
     @Test
     public void shouldPrintNumberRangeWithEndOnly(){
         printer.printNumberRangeResult(100, displayed);

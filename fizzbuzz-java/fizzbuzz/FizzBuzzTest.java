@@ -1,9 +1,9 @@
-// A simple example to get you started
+package fizzbuzz;// A simple example to get you started
 // JUnit assertion - the default Java assertion library
 // https://junit.org/junit5/
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
 
