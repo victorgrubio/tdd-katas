@@ -53,14 +53,25 @@ public class XMasSingerTest {
     }
 
     @Test
-    void shouldReturnDayIterativeLyrics(){
+    void shouldReturnAndInLastSentenceOfLastDay() {
+        int limitDay = lyrics.size();
+        List<String> sungDayLyrics = xmasSinger.singDay(limitDay);
+        assertEquals(sungDayLyrics.size(), limitDay + 2);
+        assertEquals(sungDayLyrics.get(sungDayLyrics.size() - 1), "And ".concat(
+                lyrics.get(0).substring(0, 1).toLowerCase() + lyrics.get(0).substring(1) + "."
+                )
+        );
+    }
+
+    @Test
+    void shouldReturnDayIterativeLyricsWithAndInLast(){
         int limitDay = 2;
         List<String> sungDayLyrics = xmasSinger.singDay(limitDay);
         assertEquals(sungDayLyrics.size(), limitDay + 2);
         assertEquals(sungDayLyrics, Arrays.asList(
                 "On the second day of Christmas",
                 "My true love gave to me:",
-                lyrics.get(1),
+                lyrics.get(1).concat(" and"),
                 lyrics.get(0).concat(".")
         ));
     }

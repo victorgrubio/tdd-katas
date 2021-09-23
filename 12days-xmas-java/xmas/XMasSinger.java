@@ -18,9 +18,33 @@ public class XMasSinger {
     public List<String> singDay(int dayNumber) throws IllegalArgumentException{
         checkValidLimitDay(dayNumber);
         List<String> sungLyrics = getStartingSongLyrics(dayNumber - 1);
+        List<String> finalSungLyrics = sungLyrics;
         IntStream.range(0, dayNumber).forEach(
-                dayValue -> addDayLyricsLine(sungLyrics, dayNumber - dayValue - 1)
+                dayValue -> addDayLyricsLine(finalSungLyrics, dayNumber - dayValue - 1)
         );
+        if (dayNumber == mainLyrics.size()){
+            sungLyrics = formatLastSentenceInLastDaySong(finalSungLyrics);
+        }
+        else if (dayNumber > 1){
+            sungLyrics = formatPenultimateSentenceInSong(finalSungLyrics);
+        }
+        return sungLyrics;
+    }
+
+    private List<String> formatPenultimateSentenceInSong(List<String> sungLyrics) {
+
+        String penultimateSentence = sungLyrics.get(sungLyrics.size() - 2);
+        String formattedLastSentence = penultimateSentence.concat(" and");
+        sungLyrics.set(sungLyrics.size() - 2, formattedLastSentence);
+        return sungLyrics;
+    }
+
+    private List<String> formatLastSentenceInLastDaySong(List<String> sungLyrics) {
+        String lastSentence = sungLyrics.get(sungLyrics.size() - 1);
+        String formattedLastSentence = "And ".concat(
+            lastSentence.substring(0, 1).toLowerCase() + lastSentence.substring(1)
+        );
+        sungLyrics.set(sungLyrics.size() - 1, formattedLastSentence);
         return sungLyrics;
     }
 
