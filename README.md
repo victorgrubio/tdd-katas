@@ -22,7 +22,7 @@ In the article below, you could find the motivation of doing code katas. More sp
 
 ## Find more Katas 
 
-In this websites you would be able to find more katas
+In these websites you would be able to find more katas
 
 - [Cyber Dojo (Fav)](https://cyber-dojo.org/creator/choose_problem)
 - [Kata-Log](https://kata-log.rocks/index.html)
@@ -32,14 +32,14 @@ In this websites you would be able to find more katas
 
 ## Dependencies
 
-- Java 11
-- Junit 4
+- Java 16
+- Junit 5.7
     
 ## Running Katas
 
 To run the tests correspondent to a concrete kata
 
-1. Go to the appropiate directory
+1. Go to the appropriate directory
 
 
 2. Run Tests
@@ -51,6 +51,7 @@ To run the tests correspondent to a concrete kata
 More languages will be added if possible. Although I will try to solve all I can using Java for learning reasons. 
 
 Hope you understand.
+
 ## Contributing
 
 Contributions are always welcome!
