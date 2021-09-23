@@ -15,6 +15,7 @@ In the article below, you could find the motivation of doing code katas. More sp
 
 #### [Fizzbuzz (Java)](fizzbuzz-java)
 #### [100 Doors (Java)](100doors-java)
+#### [The Twelve Days XMas Song (Java)](12days-xmas-java)
 
 
 
