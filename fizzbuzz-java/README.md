@@ -1,6 +1,7 @@
 # Cyber Dojo Kata
 - Exercise: `Fizz Buzz`
 - Language & test-framework: `Java, JUnit`
+- Status: `Solved ✅`
 
 
 ## Problem description
