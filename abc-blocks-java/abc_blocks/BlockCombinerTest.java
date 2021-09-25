@@ -58,20 +58,42 @@ public class BlockCombinerTest {
     @Test
     void shouldFindCharStringInBlockList(){
         String charString = "A";
-        assertEquals(blockCombiner.anyBlockMatch(charString), true);
+        assertTrue(blockCombiner.anyBlockMatch(charString));
+    }
+
+    @Test
+    void shouldFindCharIfLowerCase(){
+        String charString = "a";
+        assertTrue(blockCombiner.anyBlockMatch(charString));
     }
 
     @Test
     void shouldWordWithMatchingBlock(){
         String charString = "HU";
         Optional<Block> blockFound = blockCombiner.findBlockMatch(charString);
-        assertEquals(blockFound.isEmpty(), false);
+        assertFalse(blockFound.isEmpty());
     }
 
     @Test
     void shouldWordWithMatchingBlockInverse(){
         String charString = "UH";
         Optional<Block> blockFound = blockCombiner.findBlockMatch(charString);
-        assertEquals(blockFound.isEmpty(), false);
+        assertFalse(blockFound.isEmpty());
+    }
+
+    @Test
+    void shouldDisableBlockUsed(){
+        String charString = "UH";
+        Optional<Block> blockFound = blockCombiner.findBlockMatch(charString);
+        Optional<Block> blockFound2 = blockCombiner.findBlockMatch(charString);
+        assertFalse(blockFound.isEmpty());
+        assertTrue(blockFound2.isEmpty());
+    }
+
+    @Test
+    void shouldCreateWord(){
+        String charString = "BARK";
+        assertTrue(blockCombiner.createWord(charString));
+
     }
 }
