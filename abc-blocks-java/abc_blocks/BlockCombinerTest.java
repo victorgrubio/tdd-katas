@@ -91,9 +91,38 @@ public class BlockCombinerTest {
     }
 
     @Test
-    void shouldCreateWord(){
-        String charString = "BARK";
-        assertTrue(blockCombiner.createWord(charString));
-
+    void shouldCreateWordA(){
+        assertTrue(blockCombiner.createWord("A"));
     }
+
+    @Test
+    void shouldCreateWordBark(){
+        assertTrue(blockCombiner.createWord("BARK"));
+    }
+
+    @Test
+    void shouldNotCreateWordBook(){
+        assertFalse(blockCombiner.createWord("BOOK"));
+    }
+/*
+    @Test
+    void shouldCreateWordTreat(){
+        assertTrue(blockCombiner.createWord("TREAT"));
+    }
+
+    @Test
+    void shouldNotCreateWordCommon(){
+        assertFalse(blockCombiner.createWord("COMMON"));
+    }
+
+    @Test
+    void shouldCreateWordSquad(){
+        assertTrue(blockCombiner.createWord("SQUAD"));
+    }
+
+    @Test
+    void shouldCreateWordConfuse(){
+        assertTrue(blockCombiner.createWord("CONFUSE"));
+    }
+ */
 }
