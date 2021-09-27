@@ -30,15 +30,6 @@ public class BlockCombiner {
         if (foundBlock.isPresent()) blockList.remove(foundBlock.get());
     }
 
-    public Optional<Block> findBlockMatch(String charString) {
-        charString = charString.toUpperCase(Locale.ROOT);
-        String[] splitString = charString.split("");
-        Optional<Block> resultBlock =  blockList.stream().parallel()
-                .filter(block -> blockMatchString(splitString, block)).findAny();
-        removeFoundBlock(resultBlock);
-        return resultBlock;
-    }
-
     private boolean blockMatchString(String[] splitString, Block block){
         boolean response = false;
         if (block.left().equals(splitString[0]) && block.right().equals(splitString[1])){
@@ -69,15 +60,9 @@ public class BlockCombiner {
     }
 
     private boolean checkDoubleCharString(String splitBlockString){
-        boolean response;
-        Optional<Block> matchBlock = findBlockMatch(splitBlockString);
-        if (matchBlock.isEmpty()) {
-            response = Arrays.stream(
+        boolean response = Arrays.stream(
                     splitBlockString.split("")
             ).allMatch(charString -> anyBlockMatch(charString));
-        } else {
-            response = matchBlock.isPresent();
-        }
         return response;
     }
 

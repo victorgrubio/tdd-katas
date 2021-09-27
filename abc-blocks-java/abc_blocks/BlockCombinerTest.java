@@ -68,29 +68,6 @@ public class BlockCombinerTest {
     }
 
     @Test
-    void shouldWordWithMatchingBlock(){
-        String charString = "HU";
-        Optional<Block> blockFound = blockCombiner.findBlockMatch(charString);
-        assertFalse(blockFound.isEmpty());
-    }
-
-    @Test
-    void shouldWordWithMatchingBlockInverse(){
-        String charString = "UH";
-        Optional<Block> blockFound = blockCombiner.findBlockMatch(charString);
-        assertFalse(blockFound.isEmpty());
-    }
-
-    @Test
-    void shouldDisableBlockUsed(){
-        String charString = "UH";
-        Optional<Block> blockFound = blockCombiner.findBlockMatch(charString);
-        Optional<Block> blockFound2 = blockCombiner.findBlockMatch(charString);
-        assertFalse(blockFound.isEmpty());
-        assertTrue(blockFound2.isEmpty());
-    }
-
-    @Test
     void shouldCreateWordA(){
         assertTrue(blockCombiner.createWord("A"));
     }
@@ -104,7 +81,7 @@ public class BlockCombinerTest {
     void shouldNotCreateWordBook(){
         assertFalse(blockCombiner.createWord("BOOK"));
     }
-/*
+
     @Test
     void shouldCreateWordTreat(){
         assertTrue(blockCombiner.createWord("TREAT"));
@@ -124,5 +101,5 @@ public class BlockCombinerTest {
     void shouldCreateWordConfuse(){
         assertTrue(blockCombiner.createWord("CONFUSE"));
     }
- */
+
 }
