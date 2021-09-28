@@ -16,9 +16,7 @@ In the article below, you could find the motivation of doing code katas. More sp
 #### [Fizzbuzz (Java)](fizzbuzz-java)
 #### [100 Doors (Java)](100doors-java)
 #### [The Twelve Days XMas Song (Java)](12days-xmas-java)
-
-
-
+#### [ABC Blocks (Java)](abc-blocks-java)
   
 
 ## Find more Katas 
@@ -26,6 +24,7 @@ In the article below, you could find the motivation of doing code katas. More sp
 In these websites you would be able to find more katas
 
 - [Cyber Dojo (Fav)](https://cyber-dojo.org/creator/choose_problem)
+- [Rosetta Code (+1000 katas)](https://rosettacode.org)
 - [Kata-Log](https://kata-log.rocks/index.html)
 - [TDD Buddy](http://www.tddbuddy.com/)
 - [Code Kata](http://codekata.com/)

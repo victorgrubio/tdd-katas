@@ -1,7 +1,7 @@
 # TDD Kata
 - Exercise: `ABC Problem`
 - Language & test-framework: `Java, JUnit`
-- Status: `On progress`
+- Status: `Solved`
 
 ## Problem description
 
