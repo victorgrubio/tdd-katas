@@ -24,12 +24,6 @@ public class PrinterTest {
         ).collect(Collectors.toList());
     }
 
-    static boolean closeDoor(Boolean doorStatus){
-        doorStatus = false;
-        return doorStatus;
-    }
-
-
     @Test
     public void shouldPrintIterationResult() {
         printer.printIterationResult(doorStatusArray, doorStatusArray.size(), displayed);
