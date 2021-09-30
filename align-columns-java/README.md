@@ -1,8 +1,7 @@
 # TDD Kata
 - Exercise: `Align Columns`
 - Language & test-framework: `Java, JUnit`
-- Status: `On Progress`
-```
+- Status: `Solved`
 
 ## Problem Description
 
