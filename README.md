@@ -13,10 +13,12 @@ In the article below, you could find the motivation of doing code katas. More sp
 
 ## Solved
 
-#### [Fizzbuzz (Java)](fizzbuzz-java)
-#### [100 Doors (Java)](100doors-java)
-#### [The Twelve Days XMas Song (Java)](12days-xmas-java)
-#### [ABC Blocks (Java)](abc-blocks-java)
+#### Fizzbuzz ([Java](fizzbuzz-java))
+#### 100 Doors ([Java](100doors-java))
+#### The Twelve Days XMas Song ([Java](12days-xmas-java))
+#### ABC Blocks ([Java](abc-blocks-java))
+#### Align Columns ([Java](align-columns-java))
+#### Anagrams ([Java](anagrams-java))
   
 
 ## Find more Katas 
