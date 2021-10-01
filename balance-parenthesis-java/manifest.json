@@ -1,0 +1,25 @@
+{
+  "image_name": "cyberdojofoundation/java_junit:eda660d",
+  "display_name": "Java, JUnit",
+  "filename_extension": [
+    ".java"
+  ],
+  "max_seconds": 10,
+  "tab_size": 4,
+  "progress_regexs": [
+    "Failures (\\d)\\:",
+    "^\\[\\s+(\\d+) tests successful\\s+\\]"
+  ],
+  "exercise": "Balanced Parentheses",
+  "version": 2,
+  "created": [
+    2021,
+    10,
+    1,
+    14,
+    38,
+    53,
+    102460
+  ],
+  "id": "PRjQYq"
+}
