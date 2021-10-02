@@ -13,11 +13,7 @@ record Bracket(Character charItem) implements Grouper{
 
     @Override
     public boolean matchedElements(Grouper grouperElement) {
-        boolean result = false;
-        if (this.isOpener() && grouperElement.isCloser()){
-            result = true;
-        }
-        return result;
+        return this.isOpener() && grouperElement.isCloser() && grouperElement.getClass() == Bracket.class;
     }
 
     @Override
@@ -40,11 +36,7 @@ record Key(Character charItem) implements Grouper{
 
     @Override
     public boolean matchedElements(Grouper grouperElement) {
-        boolean result = false;
-        if (this.isOpener() && grouperElement.isCloser()){
-            result = true;
-        }
-        return result;
+        return this.isOpener() && grouperElement.isCloser() && grouperElement.getClass() == Key.class;
     }
 
     @Override
@@ -68,11 +60,7 @@ record Parenthesis(Character charItem) implements Grouper{
 
     @Override
     public boolean matchedElements(Grouper grouperElement) {
-        boolean result = false;
-        if (this.isOpener() && grouperElement.isCloser()){
-            result = true;
-        }
-        return result;
+        return this.isOpener() && grouperElement.isCloser() && grouperElement.getClass() == Parenthesis.class;
     }
 
     @Override
