@@ -8,9 +8,9 @@ public class GrouperTest {
 
     @Test
     void shouldTestBrackets(){
-        Bracket bracketOpen = new Bracket('[');
-        Bracket bracketClose = new Bracket(']');
-        assertTrue(bracketOpen.matchedElements(bracketClose));
+        Bracket grouper1 = new Bracket('[');
+        Bracket grouper2 = new Bracket(']');
+        assertTrue(grouper1.matchedElements(grouper2));
     }
 
     @Test
