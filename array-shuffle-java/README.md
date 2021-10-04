@@ -1,6 +1,7 @@
 # TDD Kata
 - Exercise: `Array Shuffle`
 - Language & test-framework: `Java, JUnit`
+- Status: `Done`
 
 ## Problem description
 
