@@ -20,6 +20,7 @@ In the article below, you could find the motivation of doing code katas. More sp
 #### Align Columns ([Java](align-columns-java))
 #### Anagrams ([Java](anagrams-java))
 #### Array Shuffle ([Java](array-shuffle-java))
+#### Bowling Game ([Java](bowling-game-java))
   
 
 ## Find more Katas 
