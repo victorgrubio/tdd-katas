@@ -1,9 +1,26 @@
 package bowling_game;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+enum BowlingTurnPoints {
+    SPARE(10),
+    STRIKE(20);
+
+    private final int points;
+    BowlingTurnPoints(int points) {
+        this.points = points;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+}
 
 public class BowlingGame {
 
@@ -44,12 +61,26 @@ public class BowlingGame {
         isStrike = strike;
     }
 
-    public int computeTurn(String turn){
-        String[] turnScores = turn.split(Pattern.quote("|"));
-        int result = Arrays.stream(turnScores).map(
-                this::computeScore
-        ).reduce(0, Integer::sum);
-        return result;
+    public int computeTurns(String turns){
+        String[] bowlingGameTurns = turns.split(Pattern.quote("|"));
+        int[] turnScores = new int[bowlingGameTurns.length];
+        AtomicBoolean previousStrike = new AtomicBoolean(false);
+        AtomicInteger currentScore = new AtomicInteger(0);
+        IntStream.range(0, turnScores.length).forEach(
+            turnIndex -> {
+                String[] splitBowlingTurns = bowlingGameTurns[turnIndex].split("");;
+                if (splitBowlingTurns.length == 0) throw new IllegalArgumentException("Invalid turn values");
+                if (splitBowlingTurns.length == 1 && splitBowlingTurns[0] == "X"){
+                    if (isStrike){
+                        previousStrike.set(true);
+                        currentScore.getAndAdd(10);
+                    }
+                    setStrike(true);
+
+                }
+            }
+        );
+        return Arrays.stream(turnScores).sum();
     }
 
     private int computeScore(String stringScore) {
@@ -62,39 +93,12 @@ public class BowlingGame {
     }
 
     private int computeIndividualBowling(String[] splitTurnPoints) {
-        AtomicBoolean currentSpare = new AtomicBoolean(false);
-        AtomicBoolean currentStrike = new AtomicBoolean(false);
-        return IntStream.range(0, splitTurnPoints.length).map(
-                turnIndex -> {
-                    String turnPoint = splitTurnPoints[turnIndex];
-                    int result = 0;
-                    switch (turnPoint){
-                        case "-":
-                            break;
-                        case "/":
-                            setSpare(true);
-                            currentSpare.set(true);
-                            break;
-                        case "X":
-                            setStrike(true);
-                            currentStrike.set(true);
-                            break;
-                        default:
-                            result += Integer.parseInt(turnPoint);
-                    }
-                    if (isSpare() && !currentSpare.get()){
-                        result += 10;
-                        setSpare(false);
-                    }
-                    return result;
-                }
-        ).reduce(0, (turnResult, resultValue) -> {
-            int finalResult = turnResult + resultValue;
-            if (isStrike() && !currentStrike.get()){
-                finalResult += 10;
-                setStrike(false);
-            }
-            return finalResult;
-        });
+        int result;
+        if (splitTurnPoints.length == 1 && splitTurnPoints[0] == "X"){
+            BowlingTurnPoints status = BowlingTurnPoints.STRIKE;
+            result = status.getPoints();
+        } else if (splitTurnPoints[1] == "/"){
+
+        }
     }
 }

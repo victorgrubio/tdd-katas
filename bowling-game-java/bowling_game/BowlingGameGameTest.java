@@ -17,28 +17,28 @@ public class BowlingGameGameTest {
     @Test
     void shouldComputeSimpleTurn() {
         String turn = "81|";
-        int turnResult = bowlingGame.computeTurn(turn);
+        int turnResult = bowlingGame.computeTurns(turn);
         assertEquals(turnResult, 9);
     }
 
     @Test
     void shouldComputeMissTurn() {
         String turn = "8-|";
-        int turnResult = bowlingGame.computeTurn(turn);
+        int turnResult = bowlingGame.computeTurns(turn);
         assertEquals(turnResult, 8);
     }
 
     @Test
     void shouldComputeDoubleMissTurn() {
         String turn = "--|";
-        int turnResult = bowlingGame.computeTurn(turn);
+        int turnResult = bowlingGame.computeTurns(turn);
         assertEquals(turnResult, 0);
     }
 
     @Test
     void shouldComputeSpare(){
         String turn = "5/|";
-        int turnResult = bowlingGame.computeTurn(turn);
+        int turnResult = bowlingGame.computeTurns(turn);
         assertEquals(turnResult, 5);
         assertTrue(bowlingGame.isSpare());
     }
@@ -46,7 +46,7 @@ public class BowlingGameGameTest {
     @Test
     void shouldComputeSpareComplete(){
         String turns = "5/|5-";
-        int turnResult = bowlingGame.computeTurn(turns);
+        int turnResult = bowlingGame.computeTurns(turns);
         assertEquals(turnResult, 20);
         assertFalse(bowlingGame.isSpare());
     }
@@ -54,7 +54,7 @@ public class BowlingGameGameTest {
     @Test
     void shouldComputeStrike(){
         String turns = "X|";
-        int turnResult = bowlingGame.computeTurn(turns);
+        int turnResult = bowlingGame.computeTurns(turns);
         assertEquals(turnResult, 0);
         assertTrue(bowlingGame.isStrike());
     }
@@ -62,8 +62,16 @@ public class BowlingGameGameTest {
     @Test
     void shouldComputeStrikeComplete(){
         String turns = "X|54|";
-        int turnResult = bowlingGame.computeTurn(turns);
+        int turnResult = bowlingGame.computeTurns(turns);
         assertEquals(turnResult, 28);
+        assertFalse(bowlingGame.isStrike());
+    }
+
+    @Test
+    void shouldComputeConsecutiveStrikes(){
+        String turns = "X|X|5-";
+        int turnResult = bowlingGame.computeTurns(turns);
+        assertEquals(turnResult, 45);
         assertFalse(bowlingGame.isStrike());
     }
 }
