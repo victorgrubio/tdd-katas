@@ -1,7 +1,7 @@
 # TDD Kata
 - Exercise: `Bowling Game`
 - Language & test-framework: `Java, JUnit`
-- Status: `On progress`
+- Status: `Done`
 
 ## Problem description
 Write a program to score a game of Ten-Pin Bowling.
