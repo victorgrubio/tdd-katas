@@ -1,7 +1,7 @@
 # TDD Kata
 - Exercise: `ISBN`
 - Language & test-framework: `Java, JUnit`
-- Status: `On Progress`
+- Status: `Completed`
 
 ## Problem description
 
