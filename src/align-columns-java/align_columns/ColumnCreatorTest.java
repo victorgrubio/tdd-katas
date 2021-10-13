@@ -4,8 +4,6 @@ package align_columns;// A simple example to get you started
 
 import org.junit.jupiter.api.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;

@@ -1,5 +1,4 @@
 package balance_parenthesis;
-import javax.swing.text.html.Option;
 import java.util.Optional;
 import java.util.Stack;
 import java.util.stream.IntStream;

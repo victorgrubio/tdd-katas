@@ -13,15 +13,15 @@ In the article below, you could find the motivation of doing code katas. More sp
 
 ## Solved
 
-#### Fizzbuzz ([Java](fizzbuzz-java))
-#### 100 Doors ([Java](100doors-java))
-#### The Twelve Days XMas Song ([Java](12days-xmas-java))
-#### ABC Blocks ([Java](abc-blocks-java))
-#### Align Columns ([Java](align-columns-java))
-#### Anagrams ([Java](anagrams-java))
-#### Array Shuffle ([Java](array-shuffle-java))
-#### Bowling Game ([Java](bowling-game-java))
-#### ISBN Checker ([Java](isbn-checker-java))
+#### Fizzbuzz ([Java](src/fizzbuzz-java))
+#### 100 Doors ([Java](src/100doors-java))
+#### The Twelve Days XMas Song ([Java](src/12days-xmas-java))
+#### ABC Blocks ([Java](src/abc-blocks-java))
+#### Align Columns ([Java](src/align-columns-java))
+#### Anagrams ([Java](src/anagrams-java))
+#### Array Shuffle ([Java](src/array-shuffle-java))
+#### Bowling Game ([Java](src/bowling-game-java))
+#### ISBN Checker ([Java](src/isbn-checker-java))
   
 
 ## Find more Katas 

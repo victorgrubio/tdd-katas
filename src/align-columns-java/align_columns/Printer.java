@@ -1,5 +1,4 @@
 package align_columns;
-import doors.DoorManager;
 
 import java.util.Arrays;
 import java.util.List;
