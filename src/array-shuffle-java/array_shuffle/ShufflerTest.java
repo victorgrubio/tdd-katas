@@ -33,7 +33,7 @@ public class ShufflerTest {
 
     @Test
     void twoDigitsArrayShuffler(){
-        int[] array = {-1, -2, -3};
+        int[] array = {-1, -2, -3, -4, -5, -6};
         int[] arrayOriginal = array.clone();
         int[] shuffledArray = Shuffler.shuffleArray(array);
         assertFalse(Arrays.equals(array, shuffledArray));
